@@ -1,0 +1,89 @@
+* {box-sizing: border-box;}
+
+.input-group{
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.cont-box {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px !important;
+    box-shadow: 10px 10px #d6d6d6;
+    border: 1px solid #d6d6d6;
+}
+
+.icon {
+    padding: 10px;
+    background: #d6d6d6;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    flex: none;
+}
+
+input, select {
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 1.5;
+    border-radius: 0;
+    border: 1px solid #d6d6d6;
+}
+
+input:focus, select:focus{
+  border-color: green !important;
+}
+
+
+label.bodyboldtext {
+    font-size: 17px;
+}
+
+#moreoptions{
+    display: none;
+}
+
+  input.invalid {
+    background-color: #ffdddd;
+  }
+button{
+    font-size: 20px;
+    padding: 12px 30px;
+    background: #1ab9c6;
+    border-color: #1ab9c6;
+    border: 2px solid #1ab9c6;
+}
+button:hover{
+    padding: 12px 30px;
+    background: none;
+}
+
+#summary {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#summary td, #summary th {
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+#summary tr:nth-child(even){background-color: #f2f2f2;}
+
+#summary tr:hover {background-color: #ddd;}
+
+#summary th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: black;
+}
