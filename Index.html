@@ -154,8 +154,8 @@
             $("#tom").html("Your estimated " + a + " payments are $" + montlypaymet + " and you will pay $" + c + " in interest over the total " +  b +  " years loan period.");
 
                 $("#mads").text(montlypaymet);
-                $("#total").text(c);
-                $("#interest").text(ct.toFixed(2));
+                $("#total").text(f);
+                $("#interest").text(c);
             });
             $('.body_text').change(function(){
               var LoanAmount = $("#loan_amount_input").val();
@@ -190,27 +190,41 @@
                 //document.getElementById('y').innerHTML = y;
 
                 var gh= p * R * (y/(y-1));
+
                 var montlypaymets = gh.toFixed(2);
+
                 var nf = Intl.NumberFormat();
+
                 var montlypaymet  = nf.format(montlypaymets);
+
                 var a = ($(".body_text").val());
+
                 var tope = ($(".body_text").val());
+
                 var b = NoOfYears;
+
                 var rate =  AnnualRate;
+
                 var ta = montlypaymets * n;
+
                 var ct = ta - LoanAmount;
 
                 var c = nf.format(ct);
+
                 var ft = montlypaymets * n;
+
                 var f = nf.format(ft);
                 $("#loan_amount_text").text(LoanAmount);
+
                 $("#rate_text").text(AnnualRate);
+
                 $("#no_of_years_text").text(NoOfYears);
-            $("#tom").html("Your estimated " + a + " payments are $" + montlypaymet + " and you will pay $" + c + " in interest over the total " +  b +  " years loan period.");
+                
+                $("#tom").html("Your estimated " + a + " payments are $" + montlypaymet + " and you will pay $" + c + " in interest over the total " +  b +  " years loan period.");
 
                 $("#mads").text(montlypaymet);
-                $("#total").text(c);
-                $("#interest").text(ct.toFixed(2));
+                $("#total").text(f);
+                $("#interest").text(c);
           });
       });
 
